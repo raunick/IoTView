@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monitoramento de Sensores</title>
+</head>
+<body>
+    <h1>Lista de Sensores</h1>
+    <ul>
+        {% for sensor in sensores %}
+            <li>{{ sensor.nome }} ({{ sensor.tipo }}): {{ sensor.valor }} - {{ sensor.data_hora }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
